@@ -1,0 +1,19 @@
+
+.imagemFundo {
+    position: absolute;
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+    filter: blur(10px);
+    overflow: hidden;
+    transform: scale(1.1);
+}
+
+.imagemFundo::before{
+    background: rgba(0,0,255,0.5);
+}
+
+.overflowHidden {
+    overflow: hidden;
+    background-color: aqua;
+}

@@ -1,0 +1,118 @@
+.searchpage-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #bdbdbd;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+
+.searchpage-container-conteudo{
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    height: 100%;
+
+}
+
+
+.searchpage-section2{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 30px;
+}
+
+.searchpage-filteroptions{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 1px #b6b6b6;
+    height: 700px;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.searchpage-filter-divisions{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.searchpage-filter-divisions select{
+    margin-top: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 4px 5px;
+    color: #818181
+}
+
+.searchpage-filter-deateinput{
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    border: solid 1px #b6b6b6;
+    border-radius: 10px;
+    padding: 5px;
+    color: #747474;
+    width: 90px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.searchpage-filter-deateinput input{
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    width: 100%;
+    font-size: 15px;
+
+}
+
+.searchpage-filter-deateinput-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.searchpage-filter-checkbox{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.searchpage-filter-checkbox input{
+    font-size: 10px;
+}
+
+.searchpage-filter-checkbox label{
+    color: #5f5f5f;
+}
+
+.searchpage-filteroptions button{
+    border-radius: 6px;
+    border: solid 1px #009e15;
+    font-size: 16px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #009e15;
+    cursor: pointer;
+
+}
+
+.searchpage-filteroptions button:hover{
+    color: #ffffff;
+    background-color: #23af35;
+}
+
+.searchpage-carcardresults{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}

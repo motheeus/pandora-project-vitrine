@@ -1,0 +1,23 @@
+.searchbarheader-barradepesquisa{
+    display: flex;
+    align-items: center;
+    border: solid 1px #b6b6b6;
+    border-radius: 10px;
+    height: 45px;
+    width: 500px;
+    overflow: hidden;
+
+}
+
+.searchbarheader-barradepesquisa input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.searchbarheader-barradepesquisa svg {
+    font-size: 20px;
+    color: #009e15;
+    margin: 15px;
+}

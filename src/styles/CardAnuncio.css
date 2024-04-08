@@ -1,0 +1,116 @@
+.card-wrapper{
+    position: relative;
+    background-color: #F5F5F5;
+    width: 271px;
+    height: 407px;
+    border: solid #D3D3D3 1px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.imagemPrincipal{
+    height: 160px;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+
+}
+
+.indicadorAno {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    padding: 5px 10px;
+    top: 140px;
+    left: 10px;
+
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25);
+}
+
+.embaixoFoto{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px 0 10px;
+}
+
+.modeloEspec{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6F6F6F;
+}
+
+.veranuncio{
+    background-color: #252525;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25);
+
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.veranuncio p {
+    flex-grow: 1;
+    align-self: center;
+}
+
+.veranuncio:hover{
+    background-color: #04d620;
+    transition: 0.5s;
+}
+
+.preco{
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25);
+    margin-right: 10px;
+}
+
+.quilometragem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.umdoladinhodootro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.especs{
+    display: grid;
+    grid-template-columns: 30px 100px 30px 100px;
+    font-size: 15px;
+    color: #555555;
+
+}
+
+.especs svg{
+    font-size: 20px;  
+    align-self: center;
+    justify-self: center;  
+}

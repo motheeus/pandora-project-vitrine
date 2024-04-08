@@ -1,0 +1,15 @@
+.section2-container{
+    padding: 30px 60px;
+    height: 1000px;
+}
+
+.section2-container h2{
+    margin-bottom: 20px;
+}
+
+.confiracarros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+

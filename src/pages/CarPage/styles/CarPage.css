@@ -1,0 +1,221 @@
+.carpage-container{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+.carpage-titulo {
+    font-size: 32px;
+    font-weight: 900;
+
+}
+
+.carpage-subtitulo{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5C5C5C;
+}
+
+.carpage-titulo-destaque {
+    color: #009E15;
+}
+
+.carpage-titulo-anomodelo {
+    display: inline;
+    background: white;
+    border: solid 1px #B6B6B6;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.carpage-titulo-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.carpage-titulo-superior {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.carpage-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px
+}
+
+.carpage-preco-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.carpage-preco {
+    font-size: 32px;
+    font-weight: 700;
+    background-color: white;
+    border: solid 1px #B6B6B6;
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+.carpage-container-conteudo {
+    width: 1218px;
+}
+
+.carpage-photoandinfo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 34px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.carpage-callinfo {
+    background-color: #fff;
+    border: solid 1px #B6B6B6;
+    border-radius: 10px;
+    width: 404px;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carpage-callinfo-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.carpage-callinfo-title span{
+    font-weight: 600;
+}
+
+.carpage-callinfo-title span:last-child{
+    color: #6F6F6F;
+    font-weight: 500;
+}
+
+.carpage-callinfo-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.carpage-callinfo-financiamentoinfo {
+    font-size: 14px;
+    background-color: #F2F2F2;
+    color: #5C5C5C;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.carpage-callinfo-financiamentoinfo svg {
+    font-size: 25px;
+}
+
+.carpage-callinfo-buttons-whatsapp {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: #009E15;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.carpage-callinfo-buttons-whatsapp svg{
+    font-size: 30px;
+}
+
+.carpage-callinfo-buttons-others {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: #fff;
+    color: #686868;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.carpage-callinfo-buttons-others svg{
+    font-size: 20px;
+}
+
+.carpage-background-content {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 10px 4px 20px 0px rgba(0,0,0,0.1);
+    width: 1218px;
+    height: 100%;
+    top: 150px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.carpage-caracteristicas-container {
+    width: 700px;
+    margin: 20px 35px;
+}
+
+.carpage-caracteristicas-titulo {
+    font-weight: 800;
+}
+
+.carpage-caracteristicas-objeto {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.carpage-caracteristicas-objeto svg {
+    font-size: 20px;
+    color: #929395;
+}
+
+.carpage-caracteristicas-carac {
+    color: #929395;
+    font-size: 13px;
+}
+
+.carpage-caracteristicas-descricao {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.carpage-caracteristicas-caracedescricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.carpage-caracteristicas-grid {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 20px;
+}

@@ -1,0 +1,25 @@
+$primary: rgb(48, 133, 161);
+
+.container-searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar{
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 11px 11px 32px -8px rgba(0,0,0,0.51);
+    border-radius: 10px;
+
+    button {
+        border-radius: 9px;
+        background-color: $primary;
+        border: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 10px 30px;
+
+    }
+}

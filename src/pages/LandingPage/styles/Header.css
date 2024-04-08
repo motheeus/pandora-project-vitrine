@@ -1,0 +1,46 @@
+.container-header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    padding: 0 15px;
+}
+
+.destaque{
+    background-color: #009e15;
+    color: white;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.naotanotopo{
+    border-bottom: solid 1px rgb(216, 216, 216);
+    background-color: #fff;
+}
+
+
