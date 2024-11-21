@@ -1,10 +1,11 @@
-import logo from "/src/assets/pandora_project_logo.png"
-
 import "../styles/Header.css"
 
 import { Link } from "react-router-dom"
+import { contextInfo } from "../../../context";
+import { useContext } from "react";
 
 const Header = () => {
+  const { dataContext, setDataContext } = useContext(contextInfo);
   
   // Scroll background change color 
   document.addEventListener('scroll', (e) => {
@@ -24,7 +25,7 @@ const Header = () => {
         <div id="header" className="header">
 
             <div className="logo">
-                <img src={logo} alt="" />
+                <img src={"http://localhost:8801/images/" + dataContext.logo_url} alt="" height="20" width="150"/>
             </div>
 
             <ul>

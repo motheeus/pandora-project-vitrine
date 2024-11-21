@@ -1,3 +1,5 @@
+@import '/src/variables.css';
+
 .galeria-container{
     width: 693px;
     overflow: hidden;
@@ -55,7 +57,7 @@
 }
 
 .imagem-lista-container button:hover{
-    background-color: #009E15;
+    background-color: var(--primary-color);
     color: white;
 }
 

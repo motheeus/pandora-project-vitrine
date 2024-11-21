@@ -1,14 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Header from './components/Header'
 import { CardAnuncio } from "/src/components/CardAnuncio.jsx"
 import { useSearchParams } from 'react-router-dom'
 
+import axios from "../../api/axios";
+
 import "./styles/SearchPage.css"
+import { useState } from 'react';
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams()
   const query = searchParams.get("q")
+  const [data, setData] = useState([])
+
+  const fetchProcess = () => {
+    axios
+      .get("/processService")
+      .then((res) => {
+        setData(res.data);
+        console.log(res.data);
+      })
+      .catch((e) => {
+        try {
+          toast.error(e.response.data);
+        } catch (e) {
+          toast.error(
+            "Ocorreu um erro de conexão. Tente novamente mais tarde."
+          );
+        }
+      });
+  };
+
+  useEffect(() => {
+    fetchProcess();
+  }, []);
 
   return (
     <div className='searchpage-container'>
@@ -25,7 +51,7 @@ const SearchPage = () => {
 
           <div className="searchpage-section2">
 
-            <div className="searchpage-filteroptions">
+{/*             <div className="searchpage-filteroptions">
 
               <div className="searchpage-filter-divisions">
                 Marca
@@ -136,24 +162,13 @@ const SearchPage = () => {
               </div>
 
     
-            </div>
+            </div> */}
 
             <div className="searchpage-carcardresults">
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
-              <CardAnuncio/>
 
-
+              {data.map((data, i) => (
+                  <CardAnuncio data={data} key={i}/>
+                ))}
             </div>
           </div>
 

@@ -1,3 +1,5 @@
+@import '/src/variables.css';
+
 .searchpage-container{
     position: relative;
     height: 100%;
@@ -21,8 +23,7 @@ body{
 
 .searchpage-section2{
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: 300px auto;
+    display: flex;
     gap: 30px;
 }
 
@@ -97,11 +98,11 @@ body{
 
 .searchpage-filteroptions button{
     border-radius: 6px;
-    border: solid 1px #009e15;
+    border: solid 1px var(--primary-color);
     font-size: 16px;
     padding: 5px;
     color: #ffffff;
-    background-color: #009e15;
+    background-color: var(--primary-color);
     cursor: pointer;
 
 }
@@ -115,4 +116,5 @@ body{
     display: flex;
     gap: 18px;
     flex-wrap: wrap;
+    flex-direction: row;
 }

@@ -1,3 +1,5 @@
+@import '/src/variables.css';
+
 .carpage-container{
     position: absolute;
     width: 100%;
@@ -23,7 +25,7 @@ body{
 }
 
 .carpage-titulo-destaque {
-    color: #009E15;
+    color: var(--primary-color);
 }
 
 .carpage-titulo-anomodelo {
@@ -127,26 +129,6 @@ body{
     font-size: 25px;
 }
 
-.carpage-callinfo-buttons-whatsapp {
-    height: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: none;
-    background-color: #009E15;
-    color: white;
-    width: 100%;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.carpage-callinfo-buttons-whatsapp svg{
-    font-size: 30px;
-}
-
 .carpage-callinfo-buttons-others {
     height: 52px;
     display: flex;
@@ -154,8 +136,8 @@ body{
     align-items: center;
     gap: 10px;
     border: none;
-    background-color: #fff;
-    color: #686868;
+    background-color: var(--primary-color);
+    color: #ffffff;
     width: 100%;
     border-radius: 10px;
     font-weight: 500;
@@ -218,4 +200,61 @@ body{
     display: grid;
     grid-template-columns: 150px 150px 150px 150px;
     grid-gap: 20px;
+}
+
+.carpage-opcionais-titulo {
+    font-weight: 800;
+}
+
+.carpage-opcionais-container{
+    margin-top: 30px;
+}
+
+.carpage-opcionais-itens-container{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.carpage-opcionais-itens{
+    background-color: #dbdbdb;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.modalcontato-titulo{
+    font-weight: 700;
+
+}
+
+.modalcontato-formdecontato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modalcontato-formdecontato input {
+    border-radius: 5px;
+    border: solid 1px #686868;
+    padding: 5px;
+}
+
+.modalcontato-formdecontato-inputdescricao{
+    border-radius: 5px;
+    border: solid 1px #686868;
+    padding: 5px;
+    height: 150px;
+}
+
+.modalcontato-formdecontato-butao{
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.modalcontato-formdecontato-butao:hover{
+    cursor: pointer;
 }

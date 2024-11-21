@@ -1,3 +1,5 @@
+@import '/src/variables.css';
+
 .searchbarheader-barradepesquisa{
     display: flex;
     align-items: center;
@@ -18,6 +20,6 @@
 
 .searchbarheader-barradepesquisa svg {
     font-size: 20px;
-    color: #009e15;
+    color: var(--primary-color);
     margin: 15px;
 }

@@ -1,3 +1,5 @@
+@import '/src/variables.css';
+
 .container-header-searchpage{
     position: fixed;
     width: 100%;
@@ -39,7 +41,7 @@ li {
 }
 
 .destaque{
-    background-color: #009e15;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 7px;
     padding: 10px 20px;
